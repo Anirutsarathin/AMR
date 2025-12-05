@@ -1,0 +1,10 @@
+--คำสั่ง build--
+1.colcon build --packages-select agv_new
+หรือ colcon build --packages-select ydlidar_ros2_driver agv_new
+2.source install/setup.bash
+
+--เปิดการทำงานระบบ--
+ros2 launch agv_new bringup.launch.py
+
+--เปิดการทำงาน LIDAR RVIZ2--
+ros2 launch ydlidar_ros2_driver ydlidar_launch_view.py
