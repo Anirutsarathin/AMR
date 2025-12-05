@@ -8,3 +8,6 @@ ros2 launch agv_new bringup.launch.py
 
 --เปิดการทำงาน LIDAR RVIZ2--
 ros2 launch ydlidar_ros2_driver ydlidar_launch_view.py
+
+--เปิดการทำงาน ควบคุมด้วย เเป้นพิม--
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
